@@ -5,7 +5,9 @@
       <form ng-submit="addReporter()" class="form-inline" role="form">
         <div class="form-group">
           <input type="text" ng-model="reporterName" class="form-control" placeholder="Enter Reporter's Name" required>
+          <br>
           <input type="number" ng-model="reporterYears" class="form-control" placeholder="Enter Number of Years Employed" min="0" required>
+          <br>
           <input type="date" ng-model="reporterBday" class="form-control" placeholder="Enter Reporter's Birth Day" required>
         </div>
         <button type="submit" class="btn btn-primary">Add Reporter</button>
