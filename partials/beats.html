@@ -1,11 +1,33 @@
-<div ng-show="beats.length">
+<div class="row" ng-show="beats.length">
+  <div class="col-xs-12">
+    <h4>Search Beats</h4>
+    <form class="form-inline" role="form">
+      <div class="form-group">
+        <input ng-model="query" type="text" class="form-control" placeholder="Search Beats">
+      </div>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h2 ng-show="beats.length && filtered.length">List of Beats:</h2>
+    <h2 ng-show="beats.length && !filtered.length">No Matches</h2>
+    <ul>
+      <li ng-repeat="item in filtered = (beats | filter:query)">
+        <a ui-sref="beats.reporters({ beatId: item.id })">{{ item.name }}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- <div ng-show="beats.length">
   <h1>Here are all of your beats homie:</h1>
   <ul>
     <li ng-repeat="item in beats">
       <a ui-sref="beats.reporters({ beatId: item.id })">{{ item.name }}</a>
     </li>
   </ul>
-</div>
+</div> -->
 
 <div class='row'>
 <div class='col-xs-12'>
