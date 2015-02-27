@@ -7,7 +7,6 @@ of this project was to develop an understanding of Angular and Angular-ui.
 Clone repository
 ```
 python -m SimpleHTTPServer
-
 ```
 Open index.html
 
