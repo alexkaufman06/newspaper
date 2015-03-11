@@ -10,7 +10,7 @@ python -m SimpleHTTPServer
 ```
 Open index.html
 
-[View site here](http://alexkaufman06.github.io/newspaper/)
+[View site here](http://alexkaufman06.github.io/newspaper/index.html)
 
 ### Bug Reports:
 ```
